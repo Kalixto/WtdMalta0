@@ -76,6 +76,7 @@
 		A01FCDD917C8A9CF00AFF9D3 /* 60-signpost.png in Resources */ = {isa = PBXBuildFile; fileRef = A01FCDD817C8A9CF00AFF9D3 /* 60-signpost.png */; };
 		A090775217C8C6B500CAC502 /* WTMLugaresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A090775017C8C6B500CAC502 /* WTMLugaresViewController.m */; };
 		A090775317C8C6B500CAC502 /* WTMLugaresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A090775117C8C6B500CAC502 /* WTMLugaresViewController.xib */; };
+		A0F88A7017E0E635007489D9 /* blackholedisk_cfa_1056.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0F88A6F17E0E635007489D9 /* blackholedisk_cfa_1056.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -163,6 +164,7 @@
 		A090774F17C8C6B400CAC502 /* WTMLugaresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMLugaresViewController.h; sourceTree = "<group>"; };
 		A090775017C8C6B500CAC502 /* WTMLugaresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMLugaresViewController.m; sourceTree = "<group>"; };
 		A090775117C8C6B500CAC502 /* WTMLugaresViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTMLugaresViewController.xib; sourceTree = "<group>"; };
+		A0F88A6F17E0E635007489D9 /* blackholedisk_cfa_1056.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blackholedisk_cfa_1056.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -379,6 +381,7 @@
 				A01FCDD417C8A97900AFF9D3 /* 140-gradhat.png */,
 				A01EB5D217BE45C4006DEF59 /* WtdM 114x114.png */,
 				A01EB5D017BE45BE006DEF59 /* WtdM 57x57.png */,
+				A0F88A6F17E0E635007489D9 /* blackholedisk_cfa_1056.jpg */,
 			);
 			name = General;
 			sourceTree = "<group>";
@@ -496,6 +499,7 @@
 				A01FCDD717C8A9B500AFF9D3 /* 73-radar.png in Resources */,
 				A01FCDD917C8A9CF00AFF9D3 /* 60-signpost.png in Resources */,
 				A090775317C8C6B500CAC502 /* WTMLugaresViewController.xib in Resources */,
+				A0F88A7017E0E635007489D9 /* blackholedisk_cfa_1056.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
