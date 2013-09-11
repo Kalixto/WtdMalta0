@@ -1,0 +1,641 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A01EB59A17BE23DE006DEF59 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01EB59917BE23DE006DEF59 /* UIKit.framework */; };
+		A01EB59C17BE23DE006DEF59 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01EB59B17BE23DE006DEF59 /* Foundation.framework */; };
+		A01EB59E17BE23DE006DEF59 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01EB59D17BE23DE006DEF59 /* CoreGraphics.framework */; };
+		A01EB5A417BE23DE006DEF59 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5A217BE23DE006DEF59 /* InfoPlist.strings */; };
+		A01EB5A617BE23DE006DEF59 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EB5A517BE23DE006DEF59 /* main.m */; };
+		A01EB5AA17BE23DE006DEF59 /* WTMAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EB5A917BE23DE006DEF59 /* WTMAppDelegate.m */; };
+		A01EB5AC17BE23DE006DEF59 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5AB17BE23DE006DEF59 /* Default.png */; };
+		A01EB5AE17BE23DE006DEF59 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5AD17BE23DE006DEF59 /* Default@2x.png */; };
+		A01EB5B017BE23DE006DEF59 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5AF17BE23DE006DEF59 /* Default-568h@2x.png */; };
+		A01EB5B817BE31B8006DEF59 /* WTMModeloAnuncio.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EB5B717BE31B8006DEF59 /* WTMModeloAnuncio.m */; };
+		A01EB5BC17BE31FE006DEF59 /* WTMModeloTablonAnuncio.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EB5BB17BE31FE006DEF59 /* WTMModeloTablonAnuncio.m */; };
+		A01EB5C017BE3267006DEF59 /* WTMAnuncioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EB5BE17BE3267006DEF59 /* WTMAnuncioViewController.m */; };
+		A01EB5C117BE3267006DEF59 /* WTMAnuncioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5BF17BE3267006DEF59 /* WTMAnuncioViewController.xib */; };
+		A01EB5C617BE32CF006DEF59 /* WTMWebAnuncioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EB5C417BE32CF006DEF59 /* WTMWebAnuncioViewController.m */; };
+		A01EB5C717BE32CF006DEF59 /* WTMWebAnuncioViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5C517BE32CF006DEF59 /* WTMWebAnuncioViewController.xib */; };
+		A01EB5CF17BE3332006DEF59 /* WTMTablonAnuncioTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EB5CE17BE3332006DEF59 /* WTMTablonAnuncioTableViewController.m */; };
+		A01EB5D117BE45BE006DEF59 /* WtdM 57x57.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5D017BE45BE006DEF59 /* WtdM 57x57.png */; };
+		A01EB5D317BE45C4006DEF59 /* WtdM 114x114.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5D217BE45C4006DEF59 /* WtdM 114x114.png */; };
+		A01EB5E117BE45FE006DEF59 /* WtdM-A-Foto-01.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5D517BE45FE006DEF59 /* WtdM-A-Foto-01.png */; };
+		A01EB5E217BE45FE006DEF59 /* WtdM-A-Foto-02.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5D617BE45FE006DEF59 /* WtdM-A-Foto-02.png */; };
+		A01EB5E317BE45FE006DEF59 /* WtdM-A-Foto-03.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5D717BE45FE006DEF59 /* WtdM-A-Foto-03.png */; };
+		A01EB5E417BE45FE006DEF59 /* WtdM-A-Foto-04.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5D817BE45FE006DEF59 /* WtdM-A-Foto-04.png */; };
+		A01EB5E517BE45FE006DEF59 /* WtdM-A-Foto-05.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5D917BE45FE006DEF59 /* WtdM-A-Foto-05.png */; };
+		A01EB5E617BE45FE006DEF59 /* WtdM-A-Foto-06.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5DA17BE45FE006DEF59 /* WtdM-A-Foto-06.png */; };
+		A01EB5E717BE45FE006DEF59 /* WtdM-A-Logo-01.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5DB17BE45FE006DEF59 /* WtdM-A-Logo-01.png */; };
+		A01EB5E817BE45FE006DEF59 /* WtdM-A-Logo-02.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5DC17BE45FE006DEF59 /* WtdM-A-Logo-02.png */; };
+		A01EB5E917BE45FE006DEF59 /* WtdM-A-Logo-03.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5DD17BE45FE006DEF59 /* WtdM-A-Logo-03.png */; };
+		A01EB5EA17BE45FE006DEF59 /* WtdM-A-Logo-04.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5DE17BE45FE006DEF59 /* WtdM-A-Logo-04.png */; };
+		A01EB5EB17BE45FE006DEF59 /* WtdM-A-Logo-05.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5DF17BE45FE006DEF59 /* WtdM-A-Logo-05.png */; };
+		A01EB5EC17BE45FE006DEF59 /* WtdM-A-Logo-06.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5E017BE45FE006DEF59 /* WtdM-A-Logo-06.png */; };
+		A01EB5EF17BE50D3006DEF59 /* WTMModeloCurso.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EB5EE17BE50D3006DEF59 /* WTMModeloCurso.m */; };
+		A01EB5F217BE50FC006DEF59 /* WTMModeloTablonCurso.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EB5F117BE50FC006DEF59 /* WTMModeloTablonCurso.m */; };
+		A01EB60917BE5265006DEF59 /* WtdM-C-B-Logo-01.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5F317BE5265006DEF59 /* WtdM-C-B-Logo-01.png */; };
+		A01EB60A17BE5265006DEF59 /* WtdM-C-B-Logo-02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5F417BE5265006DEF59 /* WtdM-C-B-Logo-02.jpg */; };
+		A01EB60B17BE5265006DEF59 /* WtdM-C-B-Logo-03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5F517BE5265006DEF59 /* WtdM-C-B-Logo-03.jpg */; };
+		A01EB60C17BE5265006DEF59 /* WtdM-C-B-Logo-04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5F617BE5265006DEF59 /* WtdM-C-B-Logo-04.jpg */; };
+		A01EB60D17BE5265006DEF59 /* WtdM-C-B-Logo-05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5F717BE5265006DEF59 /* WtdM-C-B-Logo-05.jpg */; };
+		A01EB60E17BE5265006DEF59 /* WtdM-C-B-Logo-06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5F817BE5265006DEF59 /* WtdM-C-B-Logo-06.jpg */; };
+		A01EB60F17BE5265006DEF59 /* WtdM-C-B-Logo-07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5F917BE5265006DEF59 /* WtdM-C-B-Logo-07.jpg */; };
+		A01EB61017BE5265006DEF59 /* WtdM-C-B-Logo-08.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5FA17BE5265006DEF59 /* WtdM-C-B-Logo-08.jpg */; };
+		A01EB61117BE5265006DEF59 /* WtdM-C-B-Logo-09.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5FB17BE5265006DEF59 /* WtdM-C-B-Logo-09.jpg */; };
+		A01EB61217BE5265006DEF59 /* WtdM-C-B-Logo-10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5FC17BE5265006DEF59 /* WtdM-C-B-Logo-10.jpg */; };
+		A01EB61317BE5265006DEF59 /* WtdM-C-C-Logo-01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5FD17BE5265006DEF59 /* WtdM-C-C-Logo-01.jpg */; };
+		A01EB61417BE5265006DEF59 /* WtdM-C-C-Logo-02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5FE17BE5265006DEF59 /* WtdM-C-C-Logo-02.jpg */; };
+		A01EB61517BE5265006DEF59 /* WtdM-C-I-Logo-01.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB5FF17BE5265006DEF59 /* WtdM-C-I-Logo-01.jpg */; };
+		A01EB61617BE5265006DEF59 /* WtdM-C-I-Logo-02.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB60017BE5265006DEF59 /* WtdM-C-I-Logo-02.jpg */; };
+		A01EB61717BE5265006DEF59 /* WtdM-C-I-Logo-03.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB60117BE5265006DEF59 /* WtdM-C-I-Logo-03.jpg */; };
+		A01EB61817BE5265006DEF59 /* WtdM-C-I-Logo-04.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB60217BE5265006DEF59 /* WtdM-C-I-Logo-04.jpg */; };
+		A01EB61917BE5265006DEF59 /* WtdM-C-I-Logo-05.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB60317BE5265006DEF59 /* WtdM-C-I-Logo-05.jpg */; };
+		A01EB61A17BE5265006DEF59 /* WtdM-C-I-Logo-06.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB60417BE5265006DEF59 /* WtdM-C-I-Logo-06.jpg */; };
+		A01EB61B17BE5265006DEF59 /* WtdM-C-I-Logo-07.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB60517BE5265006DEF59 /* WtdM-C-I-Logo-07.jpg */; };
+		A01EB61C17BE5265006DEF59 /* WtdM-C-I-Logo-08.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB60617BE5265006DEF59 /* WtdM-C-I-Logo-08.jpg */; };
+		A01EB61D17BE5265006DEF59 /* WtdM-C-I-Logo-09.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB60717BE5265006DEF59 /* WtdM-C-I-Logo-09.jpg */; };
+		A01EB61E17BE5265006DEF59 /* WtdM-C-I-Logo-10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A01EB60817BE5265006DEF59 /* WtdM-C-I-Logo-10.jpg */; };
+		A01EB62217BE5287006DEF59 /* TituloBuceo.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB61F17BE5287006DEF59 /* TituloBuceo.png */; };
+		A01EB62317BE5287006DEF59 /* TituloCocina.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB62017BE5287006DEF59 /* TituloCocina.png */; };
+		A01EB62417BE5287006DEF59 /* TituloIdiomas.png in Resources */ = {isa = PBXBuildFile; fileRef = A01EB62117BE5287006DEF59 /* TituloIdiomas.png */; };
+		A01EB62817BE5304006DEF59 /* WTMCursoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EB62617BE5304006DEF59 /* WTMCursoViewController.m */; };
+		A01EB62917BE5304006DEF59 /* WTMCursoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01EB62717BE5304006DEF59 /* WTMCursoViewController.xib */; };
+		A01EB62D17BE58A0006DEF59 /* WTMWebCursoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EB62B17BE589F006DEF59 /* WTMWebCursoViewController.m */; };
+		A01EB62E17BE58A0006DEF59 /* WTMWebCursoViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A01EB62C17BE589F006DEF59 /* WTMWebCursoViewController.xib */; };
+		A01EB63417BE6023006DEF59 /* WTMTablonCursoTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A01EB63317BE6023006DEF59 /* WTMTablonCursoTableViewController.m */; };
+		A01EB64117C0C612006DEF59 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01EB64017C0C612006DEF59 /* CoreLocation.framework */; };
+		A01EB64317C0DA78006DEF59 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A01EB64217C0DA78006DEF59 /* MapKit.framework */; };
+		A01FCDD517C8A97900AFF9D3 /* 140-gradhat.png in Resources */ = {isa = PBXBuildFile; fileRef = A01FCDD417C8A97900AFF9D3 /* 140-gradhat.png */; };
+		A01FCDD717C8A9B500AFF9D3 /* 73-radar.png in Resources */ = {isa = PBXBuildFile; fileRef = A01FCDD617C8A9B500AFF9D3 /* 73-radar.png */; };
+		A01FCDD917C8A9CF00AFF9D3 /* 60-signpost.png in Resources */ = {isa = PBXBuildFile; fileRef = A01FCDD817C8A9CF00AFF9D3 /* 60-signpost.png */; };
+		A090775217C8C6B500CAC502 /* WTMLugaresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A090775017C8C6B500CAC502 /* WTMLugaresViewController.m */; };
+		A090775317C8C6B500CAC502 /* WTMLugaresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A090775117C8C6B500CAC502 /* WTMLugaresViewController.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A01EB59617BE23DE006DEF59 /* WtdMalta0.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WtdMalta0.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A01EB59917BE23DE006DEF59 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A01EB59B17BE23DE006DEF59 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A01EB59D17BE23DE006DEF59 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A01EB5A117BE23DE006DEF59 /* WtdMalta0-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "WtdMalta0-Info.plist"; sourceTree = "<group>"; };
+		A01EB5A317BE23DE006DEF59 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A01EB5A517BE23DE006DEF59 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A01EB5A717BE23DE006DEF59 /* WtdMalta0-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "WtdMalta0-Prefix.pch"; sourceTree = "<group>"; };
+		A01EB5A817BE23DE006DEF59 /* WTMAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WTMAppDelegate.h; sourceTree = "<group>"; };
+		A01EB5A917BE23DE006DEF59 /* WTMAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WTMAppDelegate.m; sourceTree = "<group>"; };
+		A01EB5AB17BE23DE006DEF59 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		A01EB5AD17BE23DE006DEF59 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		A01EB5AF17BE23DE006DEF59 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		A01EB5B617BE31B8006DEF59 /* WTMModeloAnuncio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMModeloAnuncio.h; sourceTree = "<group>"; };
+		A01EB5B717BE31B8006DEF59 /* WTMModeloAnuncio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMModeloAnuncio.m; sourceTree = "<group>"; };
+		A01EB5BA17BE31FE006DEF59 /* WTMModeloTablonAnuncio.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMModeloTablonAnuncio.h; sourceTree = "<group>"; };
+		A01EB5BB17BE31FE006DEF59 /* WTMModeloTablonAnuncio.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMModeloTablonAnuncio.m; sourceTree = "<group>"; };
+		A01EB5BD17BE3267006DEF59 /* WTMAnuncioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMAnuncioViewController.h; sourceTree = "<group>"; };
+		A01EB5BE17BE3267006DEF59 /* WTMAnuncioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMAnuncioViewController.m; sourceTree = "<group>"; };
+		A01EB5BF17BE3267006DEF59 /* WTMAnuncioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTMAnuncioViewController.xib; sourceTree = "<group>"; };
+		A01EB5C317BE32CF006DEF59 /* WTMWebAnuncioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMWebAnuncioViewController.h; sourceTree = "<group>"; };
+		A01EB5C417BE32CF006DEF59 /* WTMWebAnuncioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMWebAnuncioViewController.m; sourceTree = "<group>"; };
+		A01EB5C517BE32CF006DEF59 /* WTMWebAnuncioViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTMWebAnuncioViewController.xib; sourceTree = "<group>"; };
+		A01EB5CD17BE3332006DEF59 /* WTMTablonAnuncioTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMTablonAnuncioTableViewController.h; sourceTree = "<group>"; };
+		A01EB5CE17BE3332006DEF59 /* WTMTablonAnuncioTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMTablonAnuncioTableViewController.m; sourceTree = "<group>"; };
+		A01EB5D017BE45BE006DEF59 /* WtdM 57x57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WtdM 57x57.png"; path = "../WtdM 57x57.png"; sourceTree = "<group>"; };
+		A01EB5D217BE45C4006DEF59 /* WtdM 114x114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "WtdM 114x114.png"; path = "../WtdM 114x114.png"; sourceTree = "<group>"; };
+		A01EB5D517BE45FE006DEF59 /* WtdM-A-Foto-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WtdM-A-Foto-01.png"; sourceTree = "<group>"; };
+		A01EB5D617BE45FE006DEF59 /* WtdM-A-Foto-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WtdM-A-Foto-02.png"; sourceTree = "<group>"; };
+		A01EB5D717BE45FE006DEF59 /* WtdM-A-Foto-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WtdM-A-Foto-03.png"; sourceTree = "<group>"; };
+		A01EB5D817BE45FE006DEF59 /* WtdM-A-Foto-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WtdM-A-Foto-04.png"; sourceTree = "<group>"; };
+		A01EB5D917BE45FE006DEF59 /* WtdM-A-Foto-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WtdM-A-Foto-05.png"; sourceTree = "<group>"; };
+		A01EB5DA17BE45FE006DEF59 /* WtdM-A-Foto-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WtdM-A-Foto-06.png"; sourceTree = "<group>"; };
+		A01EB5DB17BE45FE006DEF59 /* WtdM-A-Logo-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WtdM-A-Logo-01.png"; sourceTree = "<group>"; };
+		A01EB5DC17BE45FE006DEF59 /* WtdM-A-Logo-02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WtdM-A-Logo-02.png"; sourceTree = "<group>"; };
+		A01EB5DD17BE45FE006DEF59 /* WtdM-A-Logo-03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WtdM-A-Logo-03.png"; sourceTree = "<group>"; };
+		A01EB5DE17BE45FE006DEF59 /* WtdM-A-Logo-04.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WtdM-A-Logo-04.png"; sourceTree = "<group>"; };
+		A01EB5DF17BE45FE006DEF59 /* WtdM-A-Logo-05.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WtdM-A-Logo-05.png"; sourceTree = "<group>"; };
+		A01EB5E017BE45FE006DEF59 /* WtdM-A-Logo-06.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WtdM-A-Logo-06.png"; sourceTree = "<group>"; };
+		A01EB5ED17BE50D3006DEF59 /* WTMModeloCurso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMModeloCurso.h; sourceTree = "<group>"; };
+		A01EB5EE17BE50D3006DEF59 /* WTMModeloCurso.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMModeloCurso.m; sourceTree = "<group>"; };
+		A01EB5F017BE50FC006DEF59 /* WTMModeloTablonCurso.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMModeloTablonCurso.h; sourceTree = "<group>"; };
+		A01EB5F117BE50FC006DEF59 /* WTMModeloTablonCurso.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMModeloTablonCurso.m; sourceTree = "<group>"; };
+		A01EB5F317BE5265006DEF59 /* WtdM-C-B-Logo-01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "WtdM-C-B-Logo-01.png"; sourceTree = "<group>"; };
+		A01EB5F417BE5265006DEF59 /* WtdM-C-B-Logo-02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-B-Logo-02.jpg"; sourceTree = "<group>"; };
+		A01EB5F517BE5265006DEF59 /* WtdM-C-B-Logo-03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-B-Logo-03.jpg"; sourceTree = "<group>"; };
+		A01EB5F617BE5265006DEF59 /* WtdM-C-B-Logo-04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-B-Logo-04.jpg"; sourceTree = "<group>"; };
+		A01EB5F717BE5265006DEF59 /* WtdM-C-B-Logo-05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-B-Logo-05.jpg"; sourceTree = "<group>"; };
+		A01EB5F817BE5265006DEF59 /* WtdM-C-B-Logo-06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-B-Logo-06.jpg"; sourceTree = "<group>"; };
+		A01EB5F917BE5265006DEF59 /* WtdM-C-B-Logo-07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-B-Logo-07.jpg"; sourceTree = "<group>"; };
+		A01EB5FA17BE5265006DEF59 /* WtdM-C-B-Logo-08.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-B-Logo-08.jpg"; sourceTree = "<group>"; };
+		A01EB5FB17BE5265006DEF59 /* WtdM-C-B-Logo-09.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-B-Logo-09.jpg"; sourceTree = "<group>"; };
+		A01EB5FC17BE5265006DEF59 /* WtdM-C-B-Logo-10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-B-Logo-10.jpg"; sourceTree = "<group>"; };
+		A01EB5FD17BE5265006DEF59 /* WtdM-C-C-Logo-01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-C-Logo-01.jpg"; sourceTree = "<group>"; };
+		A01EB5FE17BE5265006DEF59 /* WtdM-C-C-Logo-02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-C-Logo-02.jpg"; sourceTree = "<group>"; };
+		A01EB5FF17BE5265006DEF59 /* WtdM-C-I-Logo-01.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-I-Logo-01.jpg"; sourceTree = "<group>"; };
+		A01EB60017BE5265006DEF59 /* WtdM-C-I-Logo-02.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-I-Logo-02.jpg"; sourceTree = "<group>"; };
+		A01EB60117BE5265006DEF59 /* WtdM-C-I-Logo-03.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-I-Logo-03.jpg"; sourceTree = "<group>"; };
+		A01EB60217BE5265006DEF59 /* WtdM-C-I-Logo-04.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-I-Logo-04.jpg"; sourceTree = "<group>"; };
+		A01EB60317BE5265006DEF59 /* WtdM-C-I-Logo-05.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-I-Logo-05.jpg"; sourceTree = "<group>"; };
+		A01EB60417BE5265006DEF59 /* WtdM-C-I-Logo-06.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-I-Logo-06.jpg"; sourceTree = "<group>"; };
+		A01EB60517BE5265006DEF59 /* WtdM-C-I-Logo-07.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-I-Logo-07.jpg"; sourceTree = "<group>"; };
+		A01EB60617BE5265006DEF59 /* WtdM-C-I-Logo-08.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-I-Logo-08.jpg"; sourceTree = "<group>"; };
+		A01EB60717BE5265006DEF59 /* WtdM-C-I-Logo-09.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-I-Logo-09.jpg"; sourceTree = "<group>"; };
+		A01EB60817BE5265006DEF59 /* WtdM-C-I-Logo-10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "WtdM-C-I-Logo-10.jpg"; sourceTree = "<group>"; };
+		A01EB61F17BE5287006DEF59 /* TituloBuceo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TituloBuceo.png; sourceTree = "<group>"; };
+		A01EB62017BE5287006DEF59 /* TituloCocina.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TituloCocina.png; sourceTree = "<group>"; };
+		A01EB62117BE5287006DEF59 /* TituloIdiomas.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TituloIdiomas.png; sourceTree = "<group>"; };
+		A01EB62517BE5304006DEF59 /* WTMCursoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMCursoViewController.h; sourceTree = "<group>"; };
+		A01EB62617BE5304006DEF59 /* WTMCursoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMCursoViewController.m; sourceTree = "<group>"; };
+		A01EB62717BE5304006DEF59 /* WTMCursoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTMCursoViewController.xib; sourceTree = "<group>"; };
+		A01EB62A17BE589F006DEF59 /* WTMWebCursoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMWebCursoViewController.h; sourceTree = "<group>"; };
+		A01EB62B17BE589F006DEF59 /* WTMWebCursoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMWebCursoViewController.m; sourceTree = "<group>"; };
+		A01EB62C17BE589F006DEF59 /* WTMWebCursoViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTMWebCursoViewController.xib; sourceTree = "<group>"; };
+		A01EB63217BE6023006DEF59 /* WTMTablonCursoTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMTablonCursoTableViewController.h; sourceTree = "<group>"; };
+		A01EB63317BE6023006DEF59 /* WTMTablonCursoTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMTablonCursoTableViewController.m; sourceTree = "<group>"; };
+		A01EB64017C0C612006DEF59 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		A01EB64217C0DA78006DEF59 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		A01FCDD417C8A97900AFF9D3 /* 140-gradhat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "140-gradhat.png"; sourceTree = "<group>"; };
+		A01FCDD617C8A9B500AFF9D3 /* 73-radar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "73-radar.png"; sourceTree = "<group>"; };
+		A01FCDD817C8A9CF00AFF9D3 /* 60-signpost.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "60-signpost.png"; sourceTree = "<group>"; };
+		A090774F17C8C6B400CAC502 /* WTMLugaresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMLugaresViewController.h; sourceTree = "<group>"; };
+		A090775017C8C6B500CAC502 /* WTMLugaresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMLugaresViewController.m; sourceTree = "<group>"; };
+		A090775117C8C6B500CAC502 /* WTMLugaresViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTMLugaresViewController.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A01EB59317BE23DE006DEF59 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01EB64317C0DA78006DEF59 /* MapKit.framework in Frameworks */,
+				A01EB64117C0C612006DEF59 /* CoreLocation.framework in Frameworks */,
+				A01EB59A17BE23DE006DEF59 /* UIKit.framework in Frameworks */,
+				A01EB59C17BE23DE006DEF59 /* Foundation.framework in Frameworks */,
+				A01EB59E17BE23DE006DEF59 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A01EB58D17BE23DE006DEF59 = {
+			isa = PBXGroup;
+			children = (
+				A01EB64217C0DA78006DEF59 /* MapKit.framework */,
+				A01EB64017C0C612006DEF59 /* CoreLocation.framework */,
+				A01EB59F17BE23DE006DEF59 /* WtdMalta0 */,
+				A01EB5D417BE45DB006DEF59 /* Recursos */,
+				A01EB5A017BE23DE006DEF59 /* Supporting Files */,
+				A01EB59817BE23DE006DEF59 /* Frameworks */,
+				A01EB59717BE23DE006DEF59 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A01EB59717BE23DE006DEF59 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A01EB59617BE23DE006DEF59 /* WtdMalta0.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A01EB59817BE23DE006DEF59 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A01EB59917BE23DE006DEF59 /* UIKit.framework */,
+				A01EB59B17BE23DE006DEF59 /* Foundation.framework */,
+				A01EB59D17BE23DE006DEF59 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A01EB59F17BE23DE006DEF59 /* WtdMalta0 */ = {
+			isa = PBXGroup;
+			children = (
+				A01EB5A817BE23DE006DEF59 /* WTMAppDelegate.h */,
+				A01EB5A917BE23DE006DEF59 /* WTMAppDelegate.m */,
+				A01EB63817BE8447006DEF59 /* Anuncios */,
+				A01EB63517BE83F4006DEF59 /* Cursos */,
+				A090775417C8C6BD00CAC502 /* Lugares */,
+			);
+			path = WtdMalta0;
+			sourceTree = "<group>";
+		};
+		A01EB5A017BE23DE006DEF59 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A01EB5A117BE23DE006DEF59 /* WtdMalta0-Info.plist */,
+				A01EB5A217BE23DE006DEF59 /* InfoPlist.strings */,
+				A01EB5A517BE23DE006DEF59 /* main.m */,
+				A01EB5A717BE23DE006DEF59 /* WtdMalta0-Prefix.pch */,
+				A01EB5AB17BE23DE006DEF59 /* Default.png */,
+				A01EB5AD17BE23DE006DEF59 /* Default@2x.png */,
+				A01EB5AF17BE23DE006DEF59 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			path = WtdMalta0;
+			sourceTree = "<group>";
+		};
+		A01EB5B917BE31BE006DEF59 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				A01EB5B617BE31B8006DEF59 /* WTMModeloAnuncio.h */,
+				A01EB5B717BE31B8006DEF59 /* WTMModeloAnuncio.m */,
+				A01EB5BA17BE31FE006DEF59 /* WTMModeloTablonAnuncio.h */,
+				A01EB5BB17BE31FE006DEF59 /* WTMModeloTablonAnuncio.m */,
+			);
+			name = Modelos;
+			sourceTree = "<group>";
+		};
+		A01EB5C217BE326F006DEF59 /* Controladores */ = {
+			isa = PBXGroup;
+			children = (
+				A01EB5BD17BE3267006DEF59 /* WTMAnuncioViewController.h */,
+				A01EB5BE17BE3267006DEF59 /* WTMAnuncioViewController.m */,
+				A01EB5BF17BE3267006DEF59 /* WTMAnuncioViewController.xib */,
+				A01EB5C317BE32CF006DEF59 /* WTMWebAnuncioViewController.h */,
+				A01EB5C417BE32CF006DEF59 /* WTMWebAnuncioViewController.m */,
+				A01EB5C517BE32CF006DEF59 /* WTMWebAnuncioViewController.xib */,
+				A01EB5CD17BE3332006DEF59 /* WTMTablonAnuncioTableViewController.h */,
+				A01EB5CE17BE3332006DEF59 /* WTMTablonAnuncioTableViewController.m */,
+			);
+			name = Controladores;
+			sourceTree = "<group>";
+		};
+		A01EB5D417BE45DB006DEF59 /* Recursos */ = {
+			isa = PBXGroup;
+			children = (
+				A01FCDD317C8A92E00AFF9D3 /* General */,
+				A01EB63917BE8A45006DEF59 /* Anuncios */,
+				A01EB63A17BE8A66006DEF59 /* Cursos */,
+			);
+			name = Recursos;
+			path = WtdMalta0;
+			sourceTree = "<group>";
+		};
+		A01EB63517BE83F4006DEF59 /* Cursos */ = {
+			isa = PBXGroup;
+			children = (
+				A01EB63617BE8401006DEF59 /* Modelos */,
+				A01EB63717BE8420006DEF59 /* Controladores */,
+			);
+			name = Cursos;
+			sourceTree = "<group>";
+		};
+		A01EB63617BE8401006DEF59 /* Modelos */ = {
+			isa = PBXGroup;
+			children = (
+				A01EB5ED17BE50D3006DEF59 /* WTMModeloCurso.h */,
+				A01EB5EE17BE50D3006DEF59 /* WTMModeloCurso.m */,
+				A01EB5F017BE50FC006DEF59 /* WTMModeloTablonCurso.h */,
+				A01EB5F117BE50FC006DEF59 /* WTMModeloTablonCurso.m */,
+			);
+			name = Modelos;
+			sourceTree = "<group>";
+		};
+		A01EB63717BE8420006DEF59 /* Controladores */ = {
+			isa = PBXGroup;
+			children = (
+				A01EB62517BE5304006DEF59 /* WTMCursoViewController.h */,
+				A01EB62617BE5304006DEF59 /* WTMCursoViewController.m */,
+				A01EB62717BE5304006DEF59 /* WTMCursoViewController.xib */,
+				A01EB62A17BE589F006DEF59 /* WTMWebCursoViewController.h */,
+				A01EB62B17BE589F006DEF59 /* WTMWebCursoViewController.m */,
+				A01EB62C17BE589F006DEF59 /* WTMWebCursoViewController.xib */,
+				A01EB63217BE6023006DEF59 /* WTMTablonCursoTableViewController.h */,
+				A01EB63317BE6023006DEF59 /* WTMTablonCursoTableViewController.m */,
+			);
+			name = Controladores;
+			sourceTree = "<group>";
+		};
+		A01EB63817BE8447006DEF59 /* Anuncios */ = {
+			isa = PBXGroup;
+			children = (
+				A01EB5B917BE31BE006DEF59 /* Modelos */,
+				A01EB5C217BE326F006DEF59 /* Controladores */,
+			);
+			name = Anuncios;
+			sourceTree = "<group>";
+		};
+		A01EB63917BE8A45006DEF59 /* Anuncios */ = {
+			isa = PBXGroup;
+			children = (
+				A01EB5D517BE45FE006DEF59 /* WtdM-A-Foto-01.png */,
+				A01EB5D617BE45FE006DEF59 /* WtdM-A-Foto-02.png */,
+				A01EB5D717BE45FE006DEF59 /* WtdM-A-Foto-03.png */,
+				A01EB5D817BE45FE006DEF59 /* WtdM-A-Foto-04.png */,
+				A01EB5D917BE45FE006DEF59 /* WtdM-A-Foto-05.png */,
+				A01EB5DA17BE45FE006DEF59 /* WtdM-A-Foto-06.png */,
+				A01EB5DB17BE45FE006DEF59 /* WtdM-A-Logo-01.png */,
+				A01EB5DC17BE45FE006DEF59 /* WtdM-A-Logo-02.png */,
+				A01EB5DD17BE45FE006DEF59 /* WtdM-A-Logo-03.png */,
+				A01EB5DE17BE45FE006DEF59 /* WtdM-A-Logo-04.png */,
+				A01EB5DF17BE45FE006DEF59 /* WtdM-A-Logo-05.png */,
+				A01EB5E017BE45FE006DEF59 /* WtdM-A-Logo-06.png */,
+			);
+			name = Anuncios;
+			sourceTree = "<group>";
+		};
+		A01EB63A17BE8A66006DEF59 /* Cursos */ = {
+			isa = PBXGroup;
+			children = (
+				A01EB61F17BE5287006DEF59 /* TituloBuceo.png */,
+				A01EB62017BE5287006DEF59 /* TituloCocina.png */,
+				A01EB62117BE5287006DEF59 /* TituloIdiomas.png */,
+				A01EB5F317BE5265006DEF59 /* WtdM-C-B-Logo-01.png */,
+				A01EB5F417BE5265006DEF59 /* WtdM-C-B-Logo-02.jpg */,
+				A01EB5F517BE5265006DEF59 /* WtdM-C-B-Logo-03.jpg */,
+				A01EB5F617BE5265006DEF59 /* WtdM-C-B-Logo-04.jpg */,
+				A01EB5F717BE5265006DEF59 /* WtdM-C-B-Logo-05.jpg */,
+				A01EB5F817BE5265006DEF59 /* WtdM-C-B-Logo-06.jpg */,
+				A01EB5F917BE5265006DEF59 /* WtdM-C-B-Logo-07.jpg */,
+				A01EB5FA17BE5265006DEF59 /* WtdM-C-B-Logo-08.jpg */,
+				A01EB5FB17BE5265006DEF59 /* WtdM-C-B-Logo-09.jpg */,
+				A01EB5FC17BE5265006DEF59 /* WtdM-C-B-Logo-10.jpg */,
+				A01EB5FD17BE5265006DEF59 /* WtdM-C-C-Logo-01.jpg */,
+				A01EB5FE17BE5265006DEF59 /* WtdM-C-C-Logo-02.jpg */,
+				A01EB5FF17BE5265006DEF59 /* WtdM-C-I-Logo-01.jpg */,
+				A01EB60017BE5265006DEF59 /* WtdM-C-I-Logo-02.jpg */,
+				A01EB60117BE5265006DEF59 /* WtdM-C-I-Logo-03.jpg */,
+				A01EB60217BE5265006DEF59 /* WtdM-C-I-Logo-04.jpg */,
+				A01EB60317BE5265006DEF59 /* WtdM-C-I-Logo-05.jpg */,
+				A01EB60417BE5265006DEF59 /* WtdM-C-I-Logo-06.jpg */,
+				A01EB60517BE5265006DEF59 /* WtdM-C-I-Logo-07.jpg */,
+				A01EB60617BE5265006DEF59 /* WtdM-C-I-Logo-08.jpg */,
+				A01EB60717BE5265006DEF59 /* WtdM-C-I-Logo-09.jpg */,
+				A01EB60817BE5265006DEF59 /* WtdM-C-I-Logo-10.jpg */,
+			);
+			name = Cursos;
+			sourceTree = "<group>";
+		};
+		A01FCDD317C8A92E00AFF9D3 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				A01FCDD817C8A9CF00AFF9D3 /* 60-signpost.png */,
+				A01FCDD617C8A9B500AFF9D3 /* 73-radar.png */,
+				A01FCDD417C8A97900AFF9D3 /* 140-gradhat.png */,
+				A01EB5D217BE45C4006DEF59 /* WtdM 114x114.png */,
+				A01EB5D017BE45BE006DEF59 /* WtdM 57x57.png */,
+			);
+			name = General;
+			sourceTree = "<group>";
+		};
+		A090775417C8C6BD00CAC502 /* Lugares */ = {
+			isa = PBXGroup;
+			children = (
+				A090774F17C8C6B400CAC502 /* WTMLugaresViewController.h */,
+				A090775017C8C6B500CAC502 /* WTMLugaresViewController.m */,
+				A090775117C8C6B500CAC502 /* WTMLugaresViewController.xib */,
+			);
+			name = Lugares;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A01EB59517BE23DE006DEF59 /* WtdMalta0 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A01EB5B317BE23DE006DEF59 /* Build configuration list for PBXNativeTarget "WtdMalta0" */;
+			buildPhases = (
+				A01EB59217BE23DE006DEF59 /* Sources */,
+				A01EB59317BE23DE006DEF59 /* Frameworks */,
+				A01EB59417BE23DE006DEF59 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = WtdMalta0;
+			productName = WtdMalta0;
+			productReference = A01EB59617BE23DE006DEF59 /* WtdMalta0.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A01EB58E17BE23DE006DEF59 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = WTM;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Edu Ardo";
+			};
+			buildConfigurationList = A01EB59117BE23DE006DEF59 /* Build configuration list for PBXProject "WtdMalta0" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A01EB58D17BE23DE006DEF59;
+			productRefGroup = A01EB59717BE23DE006DEF59 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A01EB59517BE23DE006DEF59 /* WtdMalta0 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A01EB59417BE23DE006DEF59 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01EB5A417BE23DE006DEF59 /* InfoPlist.strings in Resources */,
+				A01EB5AC17BE23DE006DEF59 /* Default.png in Resources */,
+				A01EB5AE17BE23DE006DEF59 /* Default@2x.png in Resources */,
+				A01EB5B017BE23DE006DEF59 /* Default-568h@2x.png in Resources */,
+				A01EB5C117BE3267006DEF59 /* WTMAnuncioViewController.xib in Resources */,
+				A01EB5C717BE32CF006DEF59 /* WTMWebAnuncioViewController.xib in Resources */,
+				A01EB5D117BE45BE006DEF59 /* WtdM 57x57.png in Resources */,
+				A01EB5D317BE45C4006DEF59 /* WtdM 114x114.png in Resources */,
+				A01EB5E117BE45FE006DEF59 /* WtdM-A-Foto-01.png in Resources */,
+				A01EB5E217BE45FE006DEF59 /* WtdM-A-Foto-02.png in Resources */,
+				A01EB5E317BE45FE006DEF59 /* WtdM-A-Foto-03.png in Resources */,
+				A01EB5E417BE45FE006DEF59 /* WtdM-A-Foto-04.png in Resources */,
+				A01EB5E517BE45FE006DEF59 /* WtdM-A-Foto-05.png in Resources */,
+				A01EB5E617BE45FE006DEF59 /* WtdM-A-Foto-06.png in Resources */,
+				A01EB5E717BE45FE006DEF59 /* WtdM-A-Logo-01.png in Resources */,
+				A01EB5E817BE45FE006DEF59 /* WtdM-A-Logo-02.png in Resources */,
+				A01EB5E917BE45FE006DEF59 /* WtdM-A-Logo-03.png in Resources */,
+				A01EB5EA17BE45FE006DEF59 /* WtdM-A-Logo-04.png in Resources */,
+				A01EB5EB17BE45FE006DEF59 /* WtdM-A-Logo-05.png in Resources */,
+				A01EB5EC17BE45FE006DEF59 /* WtdM-A-Logo-06.png in Resources */,
+				A01EB60917BE5265006DEF59 /* WtdM-C-B-Logo-01.png in Resources */,
+				A01EB60A17BE5265006DEF59 /* WtdM-C-B-Logo-02.jpg in Resources */,
+				A01EB60B17BE5265006DEF59 /* WtdM-C-B-Logo-03.jpg in Resources */,
+				A01EB60C17BE5265006DEF59 /* WtdM-C-B-Logo-04.jpg in Resources */,
+				A01EB60D17BE5265006DEF59 /* WtdM-C-B-Logo-05.jpg in Resources */,
+				A01EB60E17BE5265006DEF59 /* WtdM-C-B-Logo-06.jpg in Resources */,
+				A01EB60F17BE5265006DEF59 /* WtdM-C-B-Logo-07.jpg in Resources */,
+				A01EB61017BE5265006DEF59 /* WtdM-C-B-Logo-08.jpg in Resources */,
+				A01EB61117BE5265006DEF59 /* WtdM-C-B-Logo-09.jpg in Resources */,
+				A01EB61217BE5265006DEF59 /* WtdM-C-B-Logo-10.jpg in Resources */,
+				A01EB61317BE5265006DEF59 /* WtdM-C-C-Logo-01.jpg in Resources */,
+				A01EB61417BE5265006DEF59 /* WtdM-C-C-Logo-02.jpg in Resources */,
+				A01EB61517BE5265006DEF59 /* WtdM-C-I-Logo-01.jpg in Resources */,
+				A01EB61617BE5265006DEF59 /* WtdM-C-I-Logo-02.jpg in Resources */,
+				A01EB61717BE5265006DEF59 /* WtdM-C-I-Logo-03.jpg in Resources */,
+				A01EB61817BE5265006DEF59 /* WtdM-C-I-Logo-04.jpg in Resources */,
+				A01EB61917BE5265006DEF59 /* WtdM-C-I-Logo-05.jpg in Resources */,
+				A01EB61A17BE5265006DEF59 /* WtdM-C-I-Logo-06.jpg in Resources */,
+				A01EB61B17BE5265006DEF59 /* WtdM-C-I-Logo-07.jpg in Resources */,
+				A01EB61C17BE5265006DEF59 /* WtdM-C-I-Logo-08.jpg in Resources */,
+				A01EB61D17BE5265006DEF59 /* WtdM-C-I-Logo-09.jpg in Resources */,
+				A01EB61E17BE5265006DEF59 /* WtdM-C-I-Logo-10.jpg in Resources */,
+				A01EB62217BE5287006DEF59 /* TituloBuceo.png in Resources */,
+				A01EB62317BE5287006DEF59 /* TituloCocina.png in Resources */,
+				A01EB62417BE5287006DEF59 /* TituloIdiomas.png in Resources */,
+				A01EB62917BE5304006DEF59 /* WTMCursoViewController.xib in Resources */,
+				A01EB62E17BE58A0006DEF59 /* WTMWebCursoViewController.xib in Resources */,
+				A01FCDD517C8A97900AFF9D3 /* 140-gradhat.png in Resources */,
+				A01FCDD717C8A9B500AFF9D3 /* 73-radar.png in Resources */,
+				A01FCDD917C8A9CF00AFF9D3 /* 60-signpost.png in Resources */,
+				A090775317C8C6B500CAC502 /* WTMLugaresViewController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A01EB59217BE23DE006DEF59 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A01EB5A617BE23DE006DEF59 /* main.m in Sources */,
+				A01EB5AA17BE23DE006DEF59 /* WTMAppDelegate.m in Sources */,
+				A01EB5B817BE31B8006DEF59 /* WTMModeloAnuncio.m in Sources */,
+				A01EB5BC17BE31FE006DEF59 /* WTMModeloTablonAnuncio.m in Sources */,
+				A01EB5C017BE3267006DEF59 /* WTMAnuncioViewController.m in Sources */,
+				A01EB5C617BE32CF006DEF59 /* WTMWebAnuncioViewController.m in Sources */,
+				A01EB5CF17BE3332006DEF59 /* WTMTablonAnuncioTableViewController.m in Sources */,
+				A01EB5EF17BE50D3006DEF59 /* WTMModeloCurso.m in Sources */,
+				A01EB5F217BE50FC006DEF59 /* WTMModeloTablonCurso.m in Sources */,
+				A01EB62817BE5304006DEF59 /* WTMCursoViewController.m in Sources */,
+				A01EB62D17BE58A0006DEF59 /* WTMWebCursoViewController.m in Sources */,
+				A01EB63417BE6023006DEF59 /* WTMTablonCursoTableViewController.m in Sources */,
+				A090775217C8C6B500CAC502 /* WTMLugaresViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A01EB5A217BE23DE006DEF59 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A01EB5A317BE23DE006DEF59 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A01EB5B117BE23DE006DEF59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A01EB5B217BE23DE006DEF59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A01EB5B417BE23DE006DEF59 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WtdMalta0/WtdMalta0-Prefix.pch";
+				INFOPLIST_FILE = "WtdMalta0/WtdMalta0-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A01EB5B517BE23DE006DEF59 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "WtdMalta0/WtdMalta0-Prefix.pch";
+				INFOPLIST_FILE = "WtdMalta0/WtdMalta0-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A01EB59117BE23DE006DEF59 /* Build configuration list for PBXProject "WtdMalta0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A01EB5B117BE23DE006DEF59 /* Debug */,
+				A01EB5B217BE23DE006DEF59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A01EB5B317BE23DE006DEF59 /* Build configuration list for PBXNativeTarget "WtdMalta0" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A01EB5B417BE23DE006DEF59 /* Debug */,
+				A01EB5B517BE23DE006DEF59 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A01EB58E17BE23DE006DEF59 /* Project object */;
+}
