@@ -35,16 +35,16 @@
     
     WTMModeloTablonCurso *tablonCursos = [[WTMModeloTablonCurso alloc] init];
     
-    // Creamos dos Controladores: 1 del tablón de Anuncios y otro de tablón de Cursos
+    // Creamos dos Controladores: 1 del tablón de Anuncios y otro de tablón de Cursos + otro de Lugares
     
     WTMTablonAnuncioTableViewController *tablonAnunciosVC = [[WTMTablonAnuncioTableViewController alloc] initWithModelo:tablonAnuncios
                                                                                                                   style:UITableViewStyleGrouped];
     WTMTablonCursoTableViewController *tablonCursosVC = [[WTMTablonCursoTableViewController alloc] initWithModelo:tablonCursos
                                                                                                             style:UITableViewStyleGrouped];
     
-    WTMLugaresViewController *lugaresVC = [[WTMLugaresViewController alloc] init];
+    WTMLugaresViewController *lugaresVC = [[WTMLugaresViewController alloc] initLugar];
     
-    // Creamos dos Navigation para los Anuncios y para los Cursos
+    // Creamos los Navigation para los Anuncios, Cursos y para los Lugares
     
     UINavigationController *naviAnunciosVC = [[UINavigationController alloc] initWithRootViewController:tablonAnunciosVC];
     UINavigationController *naviCursosVC   = [[UINavigationController alloc] initWithRootViewController:tablonCursosVC];

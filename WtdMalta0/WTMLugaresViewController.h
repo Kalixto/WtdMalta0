@@ -10,16 +10,23 @@
 #import <CoreLocation/CoreLocation.h>
 #import <MapKit/MapKit.h>
 
-@interface WTMLugaresViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate,UITextFieldDelegate> {
+@interface WTMLugaresViewController : UIViewController <CLLocationManagerDelegate, MKMapViewDelegate, UITextFieldDelegate> {
     
-    CLLocationManager *gestorDeLocalizacion;
+    CLLocationManager *gestorLocalizacion;
+    
+    // Variables de Instancia
     
     IBOutlet MKMapView *vistaMundial;
     IBOutlet UIActivityIndicatorView *indicadorActividad;
-    IBOutlet UITextField *campoDireccion;
+    IBOutlet UITextField *tituloLugar;
     
-}
 
-- (void) buscarLocalizacion;
+    
+    
+  }
+
+-(id) initLugar;
+-(void) buscarLocalizacion;
+-(void) LocalizacionEncontrada: (CLLocation *) loc;
 
 @end
