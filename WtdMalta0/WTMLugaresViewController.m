@@ -26,24 +26,22 @@
     self.tabBarItem.image = [UIImage imageNamed:@"73-radar"];
     self.tabBarItem.title = @"Lugares";
     
-    NSLog(@"initLugar:");
+//    NSLog(@"initLugar:");
     return self;
  
 }
 
 -(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     
-    NSLog(@"initWithName1:");
+//    NSLog(@"initWithName1:");
     
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
         
         // Creamos el gestor de localización
         gestorLocalizacion = [[CLLocationManager alloc] init];
-        
         // Establecemos que la propiedad de Delegado del Gestor de Localización es el WTMViewController
         [gestorLocalizacion setDelegate:self];
-       
         // Queremos la mejor precisión independientemente del coste
         [gestorLocalizacion setDesiredAccuracy:kCLLocationAccuracyBest];
 
@@ -55,7 +53,7 @@
 -(void) viewWillAppear:(BOOL)animated {
 
     // [self buscarLocalizacion];
-    NSLog(@"viewWillAppear:");
+ //   NSLog(@"viewWillAppear:");
     
 }
 
@@ -75,7 +73,7 @@
     
     
     [vistaMundial setShowsUserLocation:YES];
-    NSLog(@"viewDidLoad");
+//    NSLog(@"viewDidLoad");
     
 }
 
@@ -85,7 +83,7 @@
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(loc, 250, 250);
     [vistaMundial setRegion:region animated:YES];
     
-    NSLog(@"mapView:");
+//    NSLog(@"mapView:");
 }
 
 -(BOOL) textFieldShouldReturn:(UITextField *)tituloLugar {
@@ -94,7 +92,7 @@
     
     [tituloLugar resignFirstResponder];
     
-    NSLog(@"textFieldShouldReturn: %@", tituloLugar);
+//    NSLog(@"textFieldShouldReturn: %@", tituloLugar);
     return YES;
 }
 
@@ -103,12 +101,12 @@
     [gestorLocalizacion startUpdatingLocation];
     [indicadorActividad startAnimating];
     [tituloLugar setHidden:YES];
-    NSLog(@"BuscarLocalizacion");
+//    NSLog(@"BuscarLocalizacion");
     
 }
 -(void) LocalizacionEncontrada: (CLLocation *) loc {
     
-    NSLog(@"LocalizacionEncontrada:");
+//    NSLog(@"LocalizacionEncontrada:");
     
     CLLocationCoordinate2D coord = [loc coordinate];
     
@@ -132,24 +130,19 @@
 
 -(IBAction)opcionMapa:(id)sender {
     
-    NSLog(@"opcionMapa:");
-    
     switch ([sender selectedSegmentIndex]) {
         case 0:
         {
-            NSLog(@"opcionMapa1:");
             [vistaMundial setMapType:MKMapTypeStandard];
         }
             break;
         case 1:
         {
-            NSLog(@"opcionMapa2:");
             [vistaMundial setMapType:MKMapTypeSatellite];
         }
             break;
         case 2:
         {
-            NSLog(@"opcionMapa3:");
             [vistaMundial setMapType:MKMapTypeHybrid];
         }
     }
@@ -161,9 +154,9 @@
 -(void) locationManager:(CLLocationManager *) gestor
     didUpdateToLocation:(CLLocation *)newLocation
            fromLocation:(CLLocation *)oldLocation {
-    NSLog(@"didUpdate: %@", newLocation);
+//    NSLog(@"didUpdate: %@", newLocation);
     
-    NSLog(@"didUpdateToLocation:");
+//    NSLog(@"didUpdateToLocation:");
     
     // Cuántos segundos hace que se creó la localización?
     NSTimeInterval t = [[newLocation timestamp] timeIntervalSinceNow];
