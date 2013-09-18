@@ -19,28 +19,63 @@
 
     self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.1
                                                                         green:0.1
-                                                                         blue:0.5 alpha:1];
+                                                                         blue:0.5
+                                                                        alpha:1];
+    
     self.title = @"What to do Malta";
     self.tabBarItem.image = [UIImage imageNamed:@"73-radar"];
     self.tabBarItem.title = @"Lugares";
+    
+    NSLog(@"initLugar:");
     return self;
  
 }
 
--(void) viewWillAppear:(BOOL)animated {
- //   [super viewWillAppear:animated];
- //   self.navigationController.navigationBar.tintColor = [UIColor colorWithRed:0.1
- //                                                                       green:0.1
- //                                                                        blue:0.5 alpha:1];
+-(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
     
- //   self.title = @"What to do Malta";
- //   self.tabBarItem.image = [UIImage imageNamed:@"73-radar"];
- //   self.tabBarItem.title = @"Lugares";
+    NSLog(@"initWithName1:");
+    
+    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+    if (self) {
+        
+        // Creamos el gestor de localización
+        gestorLocalizacion = [[CLLocationManager alloc] init];
+        
+        // Establecemos que la propiedad de Delegado del Gestor de Localización es el WTMViewController
+        [gestorLocalizacion setDelegate:self];
+       
+        // Queremos la mejor precisión independientemente del coste
+        [gestorLocalizacion setDesiredAccuracy:kCLLocationAccuracyBest];
+
+    }
+    
+    return self;
+}
+
+-(void) viewWillAppear:(BOOL)animated {
+
+    // [self buscarLocalizacion];
+    NSLog(@"viewWillAppear:");
+    
 }
 
 -(void) viewDidLoad {
     
+    // Una opción es crear el gestor y demás aquí, en vez de en initWithNibName:(NSString *)nibNameOrNil bundle:...
+     
+    // Creamos el gestor de localización
+    gestorLocalizacion = [[CLLocationManager alloc] init];
+    
+    // Establecemos que la propiedad de Delegado del Gestor de Localización es el WTMViewController
+    [gestorLocalizacion setDelegate:self];
+    
+    // Queremos la mejor precisión independientemente del coste
+    [gestorLocalizacion setDesiredAccuracy:kCLLocationAccuracyBest];
+     
+    
+    
     [vistaMundial setShowsUserLocation:YES];
+    NSLog(@"viewDidLoad");
     
 }
 
@@ -49,13 +84,17 @@
     CLLocationCoordinate2D loc = [lugarUsuario coordinate];
     MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(loc, 250, 250);
     [vistaMundial setRegion:region animated:YES];
+    
+    NSLog(@"mapView:");
 }
 
--(BOOL) textFieldShouldReturn:(UITextField *)textField {
+-(BOOL) textFieldShouldReturn:(UITextField *)tituloLugar {
     
- //   [self buscarLocalizacion];
+    [self buscarLocalizacion];
     
-    [textField resignFirstResponder];
+    [tituloLugar resignFirstResponder];
+    
+    NSLog(@"textFieldShouldReturn: %@", tituloLugar);
     return YES;
 }
 
@@ -64,9 +103,12 @@
     [gestorLocalizacion startUpdatingLocation];
     [indicadorActividad startAnimating];
     [tituloLugar setHidden:YES];
+    NSLog(@"BuscarLocalizacion");
     
 }
 -(void) LocalizacionEncontrada: (CLLocation *) loc {
+    
+    NSLog(@"LocalizacionEncontrada:");
     
     CLLocationCoordinate2D coord = [loc coordinate];
     
@@ -88,11 +130,40 @@
     
 }
 
-/*
+-(IBAction)opcionMapa:(id)sender {
+    
+    NSLog(@"opcionMapa:");
+    
+    switch ([sender selectedSegmentIndex]) {
+        case 0:
+        {
+            NSLog(@"opcionMapa1:");
+            [vistaMundial setMapType:MKMapTypeStandard];
+        }
+            break;
+        case 1:
+        {
+            NSLog(@"opcionMapa2:");
+            [vistaMundial setMapType:MKMapTypeSatellite];
+        }
+            break;
+        case 2:
+        {
+            NSLog(@"opcionMapa3:");
+            [vistaMundial setMapType:MKMapTypeHybrid];
+        }
+    }
+        
+    }
+
+
+
 -(void) locationManager:(CLLocationManager *) gestor
     didUpdateToLocation:(CLLocation *)newLocation
            fromLocation:(CLLocation *)oldLocation {
     NSLog(@"didUpdate: %@", newLocation);
+    
+    NSLog(@"didUpdateToLocation:");
     
     // Cuántos segundos hace que se creó la localización?
     NSTimeInterval t = [[newLocation timestamp] timeIntervalSinceNow];
@@ -104,43 +175,6 @@
         return;
     }
     [self LocalizacionEncontrada:newLocation];
-}
- */
-
-/* Lo borro no sirve paná
- 
--(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
-    
-     NSLog(@"initWithName1:");
-    
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
-    if (self) {
-        
-        // Creamos el gestor de localización
-        gestorLocalizacion = [[CLLocationManager alloc] init];
-        
-        // Queremos la mejor precisión independientemente del coste
-        [gestorLocalizacion setDesiredAccuracy:kCLLocationAccuracyBest];
-        
-        // Establecemos que la propiedad de Delegado del Gestor de Localización es el WTMViewController
-        [gestorLocalizacion setDelegate:self];
-        
-        // Lo ponemos a buscar la localización ya mismo
-        [gestorLocalizacion startUpdatingLocation];
-        
-        NSLog(@"initWithName2:");
-    }
-    
-    NSLog(@"initWithName3:");
-    
-    return self;
-}
-
-
--(void) locationManager:(CLLocationManager *) gestor
-    didUpdateToLocation:(CLLocation *)newLocation
-           fromLocation:(CLLocation *)oldLocation {
-    NSLog(@"didUpdate: %@", newLocation);
 }
 
 -(void) locationManager: (CLLocationManager *) gestor
@@ -154,6 +188,5 @@
     [gestorLocalizacion setDelegate:nil];
 }
  
- */
 
 @end

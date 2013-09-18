@@ -20,13 +20,12 @@
     IBOutlet UIActivityIndicatorView *indicadorActividad;
     IBOutlet UITextField *tituloLugar;
     
-
-    
-    
   }
 
 -(id) initLugar;
 -(void) buscarLocalizacion;
 -(void) LocalizacionEncontrada: (CLLocation *) loc;
+
+-(IBAction)opcionMapa:(id)sender;
 
 @end

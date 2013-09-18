@@ -18,13 +18,17 @@
                   Notas: (NSString *) aNotas
                     Url: (NSURL *) aUrl
                    Foto: (UIImage *) aFoto
-                 Matriz:(NSString *)aMatriz{
+                 Matriz:(NSString *)aMatriz
+                Latitud:(double)aLatitud
+               Longitud:(double)aLongitud{
     return [[self alloc] initWithNombre:aNombre
                                    Logo:aLogo
                                   Notas:aNotas
                                     Url:aUrl
                                    Foto:aFoto
-                                 Matriz:aMatriz];
+                                 Matriz:aMatriz
+                                Latitud:aLatitud
+                               Longitud:aLongitud];
 }
 
 +(id) anuncioWithNombre: (NSString *) aNombre
@@ -47,7 +51,9 @@
                Notas: (NSString *) aNotas
                  Url: (NSURL *) aUrl
                 Foto: (UIImage *) aFoto
-              Matriz:(NSString *)aMatriz{
+              Matriz:(NSString *)aMatriz
+             Latitud:(double)aLatitud
+            Longitud:(double)aLongitud{
     
     if (self = [super init]) {
         // Asignar los parámetros a las variables de instancia
@@ -57,6 +63,8 @@
         _url = aUrl;
         _foto = aFoto;
         _matriz = aMatriz;
+        _latitud = aLatitud;
+        _longitud = aLongitud;
     }
     return  self;
 }
@@ -73,7 +81,9 @@
                           Notas:aNotas
                             Url:nil
                            Foto:aFoto
-                         Matriz:nil];
+                         Matriz:nil
+                        Latitud:0
+                       Longitud:0];
 }
 
 

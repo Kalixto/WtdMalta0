@@ -17,6 +17,8 @@
 @property (strong, nonatomic) NSURL *url;
 @property (strong, nonatomic) UIImage *foto;
 @property (strong, nonatomic) NSString *matriz;
+@property (nonatomic) double latitud;
+@property (nonatomic) double longitud;
 
 // Constructores (métodos de clase)
 +(id) anuncioWithNombre: (NSString *) aNombre
@@ -24,7 +26,9 @@
                   Notas: (NSString *) aNotas
                     Url: (NSURL *) aUrl
                    Foto: (UIImage *) aFoto
-                 Matriz: (NSString *) aMatriz;
+                 Matriz: (NSString *) aMatriz
+                Latitud: (double) aLatitud
+               Longitud: (double) aLongitud;
 
 +(id) anuncioWithNombre: (NSString *) aNombre
                    Logo: (UIImage *) aLogo
@@ -39,7 +43,9 @@
                Notas: (NSString *) aNotas
                  Url: (NSURL *) aUrl
                 Foto: (UIImage *) aFoto
-              Matriz: (NSString *) aMatriz;
+              Matriz: (NSString *) aMatriz
+             Latitud: (double) aLatitud
+            Longitud: (double) aLongitud;
 
 // Inicializador de Coveniencia (sin url)
 

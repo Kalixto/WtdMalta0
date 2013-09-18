@@ -76,6 +76,8 @@
 		A01FCDD917C8A9CF00AFF9D3 /* 60-signpost.png in Resources */ = {isa = PBXBuildFile; fileRef = A01FCDD817C8A9CF00AFF9D3 /* 60-signpost.png */; };
 		A090775217C8C6B500CAC502 /* WTMLugaresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A090775017C8C6B500CAC502 /* WTMLugaresViewController.m */; };
 		A090775317C8C6B500CAC502 /* WTMLugaresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A090775117C8C6B500CAC502 /* WTMLugaresViewController.xib */; };
+		A0E5CDFA17E7789A0053507D /* WTMPlanoSituacionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E5CDF817E7789A0053507D /* WTMPlanoSituacionViewController.m */; };
+		A0E5CDFB17E7789A0053507D /* WTMPlanoSituacionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E5CDF917E7789A0053507D /* WTMPlanoSituacionViewController.xib */; };
 		A0F88A7017E0E635007489D9 /* blackholedisk_cfa_1056.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0F88A6F17E0E635007489D9 /* blackholedisk_cfa_1056.jpg */; };
 		A0F88AAB17E3758B007489D9 /* WTMModeloMapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F88AAA17E3758B007489D9 /* WTMModeloMapPoint.m */; };
 /* End PBXBuildFile section */
@@ -165,6 +167,9 @@
 		A090774F17C8C6B400CAC502 /* WTMLugaresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMLugaresViewController.h; sourceTree = "<group>"; };
 		A090775017C8C6B500CAC502 /* WTMLugaresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMLugaresViewController.m; sourceTree = "<group>"; };
 		A090775117C8C6B500CAC502 /* WTMLugaresViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTMLugaresViewController.xib; sourceTree = "<group>"; };
+		A0E5CDF717E7789A0053507D /* WTMPlanoSituacionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMPlanoSituacionViewController.h; sourceTree = "<group>"; };
+		A0E5CDF817E7789A0053507D /* WTMPlanoSituacionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMPlanoSituacionViewController.m; sourceTree = "<group>"; };
+		A0E5CDF917E7789A0053507D /* WTMPlanoSituacionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTMPlanoSituacionViewController.xib; sourceTree = "<group>"; };
 		A0F88A6F17E0E635007489D9 /* blackholedisk_cfa_1056.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blackholedisk_cfa_1056.jpg; sourceTree = "<group>"; };
 		A0F88AA917E3758B007489D9 /* WTMModeloMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMModeloMapPoint.h; sourceTree = "<group>"; };
 		A0F88AAA17E3758B007489D9 /* WTMModeloMapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMModeloMapPoint.m; sourceTree = "<group>"; };
@@ -266,6 +271,9 @@
 				A01EB5C517BE32CF006DEF59 /* WTMWebAnuncioViewController.xib */,
 				A01EB5CD17BE3332006DEF59 /* WTMTablonAnuncioTableViewController.h */,
 				A01EB5CE17BE3332006DEF59 /* WTMTablonAnuncioTableViewController.m */,
+				A0E5CDF717E7789A0053507D /* WTMPlanoSituacionViewController.h */,
+				A0E5CDF817E7789A0053507D /* WTMPlanoSituacionViewController.m */,
+				A0E5CDF917E7789A0053507D /* WTMPlanoSituacionViewController.xib */,
 			);
 			name = Controladores;
 			sourceTree = "<group>";
@@ -521,6 +529,7 @@
 				A01FCDD917C8A9CF00AFF9D3 /* 60-signpost.png in Resources */,
 				A090775317C8C6B500CAC502 /* WTMLugaresViewController.xib in Resources */,
 				A0F88A7017E0E635007489D9 /* blackholedisk_cfa_1056.jpg in Resources */,
+				A0E5CDFB17E7789A0053507D /* WTMPlanoSituacionViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -545,6 +554,7 @@
 				A01EB63417BE6023006DEF59 /* WTMTablonCursoTableViewController.m in Sources */,
 				A090775217C8C6B500CAC502 /* WTMLugaresViewController.m in Sources */,
 				A0F88AAB17E3758B007489D9 /* WTMModeloMapPoint.m in Sources */,
+				A0E5CDFA17E7789A0053507D /* WTMPlanoSituacionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

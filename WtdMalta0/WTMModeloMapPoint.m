@@ -10,14 +10,14 @@
 
 @implementation WTMModeloMapPoint
 
-@synthesize titulo;
+@synthesize coordinate, titulo;
 
 -(id) initWithCoordenadas: (CLLocationCoordinate2D) c
                      titulo: (NSString *) t {
     
     self = [super init];
     if (self) {
-        _coordinate = c;
+        coordinate = c;
         [self setTitulo:t];
     }
     return self;

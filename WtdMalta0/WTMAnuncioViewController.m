@@ -8,6 +8,7 @@
 
 #import "WTMAnuncioViewController.h"
 #import "WTMWebAnuncioViewController.h"
+#import "WTMPlanoSituacionViewController.h"
 
 /* No hace falta aquí
 @interface WTMAnuncioViewController ()
@@ -52,16 +53,16 @@
 
 - (IBAction) displayUrl:(id)sender{
     
-    //  NSLog(@"Ir a: %@", self.modelo.url);
-    
     // Crear un webVC
-    WTMWebAnuncioViewController *webVC = [[WTMWebAnuncioViewController alloc] initWithModelo:self.modelo];
-    
-   // WTMMapaAnuncioViewController *mapaVC = [[WTMMapaAnuncioViewController alloc] initWithModelo:self.modelo];
+ //   WTMWebAnuncioViewController *webVC = [[WTMWebAnuncioViewController alloc] initWithModelo:self.modelo];
     
     // hacemos un Push
-    [self.navigationController pushViewController:webVC
-                                         animated:YES];
+ //   [self.navigationController pushViewController:webVC
+ //                                        animated:YES];
+    
+    WTMPlanoSituacionViewController *planoVC = [[WTMPlanoSituacionViewController alloc] initWithModelo:self.modelo];
+    [self.navigationController pushViewController:planoVC animated:YES];
+    
     
 }
 
