@@ -54,16 +54,17 @@
 - (IBAction) displayUrl:(id)sender{
     
     // Crear un webVC
- //   WTMWebAnuncioViewController *webVC = [[WTMWebAnuncioViewController alloc] initWithModelo:self.modelo];
+    WTMWebAnuncioViewController *webVC = [[WTMWebAnuncioViewController alloc] initWithModelo:self.modelo];
     
     // hacemos un Push
- //   [self.navigationController pushViewController:webVC
- //                                        animated:YES];
-    
+    [self.navigationController pushViewController:webVC
+                                        animated:YES];
+}
+
+-(IBAction)displayPlano:(id)sender {
     WTMPlanoSituacionViewController *planoVC = [[WTMPlanoSituacionViewController alloc] initWithModelo:self.modelo];
     [self.navigationController pushViewController:planoVC animated:YES];
-    
-    
+      
 }
 
 #pragma  mark - Utilidades
@@ -71,10 +72,8 @@
 -(void) sincronizarVistaYModelo {
     
     self.notasLabel.text = self.modelo.notas;
-    self.logoView.image = self.modelo.logo;
+//    self.logoView.image = self.modelo.logo;
     self.fotoView.image = self.modelo.foto;
-    
-    //    self.botonUrl.imageView = self.modelo.logo;
     
     //  [self.notasLabel setNumberOfLines:0];
     

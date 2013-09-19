@@ -15,13 +15,13 @@
 
 @property (strong, nonatomic) WTMModeloAnuncio *modelo;
 
-@property (weak, nonatomic) IBOutlet UIImageView *logoView;
+// @property (weak, nonatomic) IBOutlet UIImageView *logoView;
 @property (weak, nonatomic) IBOutlet UIImageView *fotoView;
 @property (weak, nonatomic) IBOutlet UILabel *notasLabel;
-@property (weak, nonatomic) IBOutlet UIButton *botonUrl;
 
 -(id) initWithModelo: (WTMModeloAnuncio *) aModelo;
 
 -(IBAction)displayUrl:(id)sender;
+-(IBAction)displayPlano:(id)sender;
 
 @end

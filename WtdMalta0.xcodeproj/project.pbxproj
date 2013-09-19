@@ -76,6 +76,8 @@
 		A01FCDD917C8A9CF00AFF9D3 /* 60-signpost.png in Resources */ = {isa = PBXBuildFile; fileRef = A01FCDD817C8A9CF00AFF9D3 /* 60-signpost.png */; };
 		A090775217C8C6B500CAC502 /* WTMLugaresViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A090775017C8C6B500CAC502 /* WTMLugaresViewController.m */; };
 		A090775317C8C6B500CAC502 /* WTMLugaresViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A090775117C8C6B500CAC502 /* WTMLugaresViewController.xib */; };
+		A0A2340F17EA1B5900ACA76C /* 07-map-marker.png in Resources */ = {isa = PBXBuildFile; fileRef = A0A2340E17EA1B5900ACA76C /* 07-map-marker.png */; };
+		A0A2341117EA20EB00ACA76C /* 74-location.png in Resources */ = {isa = PBXBuildFile; fileRef = A0A2341017EA20EB00ACA76C /* 74-location.png */; };
 		A0E5CDFA17E7789A0053507D /* WTMPlanoSituacionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E5CDF817E7789A0053507D /* WTMPlanoSituacionViewController.m */; };
 		A0E5CDFB17E7789A0053507D /* WTMPlanoSituacionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E5CDF917E7789A0053507D /* WTMPlanoSituacionViewController.xib */; };
 		A0F88A7017E0E635007489D9 /* blackholedisk_cfa_1056.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0F88A6F17E0E635007489D9 /* blackholedisk_cfa_1056.jpg */; };
@@ -167,6 +169,8 @@
 		A090774F17C8C6B400CAC502 /* WTMLugaresViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMLugaresViewController.h; sourceTree = "<group>"; };
 		A090775017C8C6B500CAC502 /* WTMLugaresViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMLugaresViewController.m; sourceTree = "<group>"; };
 		A090775117C8C6B500CAC502 /* WTMLugaresViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTMLugaresViewController.xib; sourceTree = "<group>"; };
+		A0A2340E17EA1B5900ACA76C /* 07-map-marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "07-map-marker.png"; sourceTree = "<group>"; };
+		A0A2341017EA20EB00ACA76C /* 74-location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "74-location.png"; sourceTree = "<group>"; };
 		A0E5CDF717E7789A0053507D /* WTMPlanoSituacionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMPlanoSituacionViewController.h; sourceTree = "<group>"; };
 		A0E5CDF817E7789A0053507D /* WTMPlanoSituacionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMPlanoSituacionViewController.m; sourceTree = "<group>"; };
 		A0E5CDF917E7789A0053507D /* WTMPlanoSituacionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTMPlanoSituacionViewController.xib; sourceTree = "<group>"; };
@@ -388,7 +392,9 @@
 			isa = PBXGroup;
 			children = (
 				A01FCDD817C8A9CF00AFF9D3 /* 60-signpost.png */,
+				A0A2340E17EA1B5900ACA76C /* 07-map-marker.png */,
 				A01FCDD617C8A9B500AFF9D3 /* 73-radar.png */,
+				A0A2341017EA20EB00ACA76C /* 74-location.png */,
 				A01FCDD417C8A97900AFF9D3 /* 140-gradhat.png */,
 				A01EB5D217BE45C4006DEF59 /* WtdM 114x114.png */,
 				A01EB5D017BE45BE006DEF59 /* WtdM 57x57.png */,
@@ -530,6 +536,8 @@
 				A090775317C8C6B500CAC502 /* WTMLugaresViewController.xib in Resources */,
 				A0F88A7017E0E635007489D9 /* blackholedisk_cfa_1056.jpg in Resources */,
 				A0E5CDFB17E7789A0053507D /* WTMPlanoSituacionViewController.xib in Resources */,
+				A0A2340F17EA1B5900ACA76C /* 07-map-marker.png in Resources */,
+				A0A2341117EA20EB00ACA76C /* 74-location.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
