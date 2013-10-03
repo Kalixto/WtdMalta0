@@ -50,6 +50,7 @@
     punto.coordinate = plano;
     punto.title = self.modelo.nombre;
     punto.subtitle = self.modelo.matriz;
+    
     [localizacion addAnnotation:punto];
     
     MKCoordinateRegion viewRegion = MKCoordinateRegionMakeWithDistance(plano, 500, 500);

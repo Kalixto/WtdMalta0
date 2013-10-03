@@ -35,7 +35,7 @@
     
     WTMModeloTablonCurso *tablonCursos = [[WTMModeloTablonCurso alloc] init];
     
-    // Creamos dos Controladores: 1 del tablón de Anuncios y otro de tablón de Cursos + otro de Lugares
+    // Creamos 3 Controladores: 1 del tablón de Anuncios y otro de tablón de Cursos + otro de Lugares
     
     WTMTablonAnuncioTableViewController *tablonAnunciosVC = [[WTMTablonAnuncioTableViewController alloc] initWithModelo:tablonAnuncios
                                                                                                                   style:UITableViewStyleGrouped];

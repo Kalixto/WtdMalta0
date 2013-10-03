@@ -182,8 +182,8 @@
     
     // Creamos un controlador para dicho anuncio
     
+   // WTMAnuncioViewController *anuncioVC = [[WTMAnuncioViewController alloc] initWithNibName:@"WTMAnuncoViewController" bundle:nil initWithModelo:anuncio];
     WTMAnuncioViewController *anuncioVC = [[WTMAnuncioViewController alloc] initWithModelo:anuncio];
-    
     
     
     // Hacemos un push al navigation controller dentro del cual estamos

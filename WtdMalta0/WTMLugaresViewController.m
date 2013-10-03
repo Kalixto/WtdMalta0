@@ -56,11 +56,14 @@
     [vistaMundial setRegion:region animated:YES];
 }
 
--(BOOL) textFieldShouldReturn:(UITextField *)tx {
+-(BOOL) textFieldShouldReturn:(UITextField *)tf  {
     
     [self buscarLocalizacion];
     
-    [tituloLugar resignFirstResponder];
+    [tf resignFirstResponder];
+    
+ //   NSLog(@"textFieldShouldReturn:1");
+ //   NSLog(@"texto: %@", tituloLugar );
     
     return YES;
 }

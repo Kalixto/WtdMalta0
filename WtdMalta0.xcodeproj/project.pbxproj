@@ -80,6 +80,7 @@
 		A0A2341117EA20EB00ACA76C /* 74-location.png in Resources */ = {isa = PBXBuildFile; fileRef = A0A2341017EA20EB00ACA76C /* 74-location.png */; };
 		A0E5CDFA17E7789A0053507D /* WTMPlanoSituacionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A0E5CDF817E7789A0053507D /* WTMPlanoSituacionViewController.m */; };
 		A0E5CDFB17E7789A0053507D /* WTMPlanoSituacionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0E5CDF917E7789A0053507D /* WTMPlanoSituacionViewController.xib */; };
+		A0F6715017F0B96B0013817F /* WTMAnuncioViewController~ipad.xib in Resources */ = {isa = PBXBuildFile; fileRef = A0F6714F17F0B96B0013817F /* WTMAnuncioViewController~ipad.xib */; };
 		A0F88A7017E0E635007489D9 /* blackholedisk_cfa_1056.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A0F88A6F17E0E635007489D9 /* blackholedisk_cfa_1056.jpg */; };
 		A0F88AAB17E3758B007489D9 /* WTMModeloMapPoint.m in Sources */ = {isa = PBXBuildFile; fileRef = A0F88AAA17E3758B007489D9 /* WTMModeloMapPoint.m */; };
 /* End PBXBuildFile section */
@@ -174,6 +175,7 @@
 		A0E5CDF717E7789A0053507D /* WTMPlanoSituacionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMPlanoSituacionViewController.h; sourceTree = "<group>"; };
 		A0E5CDF817E7789A0053507D /* WTMPlanoSituacionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMPlanoSituacionViewController.m; sourceTree = "<group>"; };
 		A0E5CDF917E7789A0053507D /* WTMPlanoSituacionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WTMPlanoSituacionViewController.xib; sourceTree = "<group>"; };
+		A0F6714F17F0B96B0013817F /* WTMAnuncioViewController~ipad.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = "WTMAnuncioViewController~ipad.xib"; sourceTree = "<group>"; };
 		A0F88A6F17E0E635007489D9 /* blackholedisk_cfa_1056.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = blackholedisk_cfa_1056.jpg; sourceTree = "<group>"; };
 		A0F88AA917E3758B007489D9 /* WTMModeloMapPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WTMModeloMapPoint.h; sourceTree = "<group>"; };
 		A0F88AAA17E3758B007489D9 /* WTMModeloMapPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WTMModeloMapPoint.m; sourceTree = "<group>"; };
@@ -270,6 +272,7 @@
 				A01EB5BD17BE3267006DEF59 /* WTMAnuncioViewController.h */,
 				A01EB5BE17BE3267006DEF59 /* WTMAnuncioViewController.m */,
 				A01EB5BF17BE3267006DEF59 /* WTMAnuncioViewController.xib */,
+				A0F6714F17F0B96B0013817F /* WTMAnuncioViewController~ipad.xib */,
 				A01EB5C317BE32CF006DEF59 /* WTMWebAnuncioViewController.h */,
 				A01EB5C417BE32CF006DEF59 /* WTMWebAnuncioViewController.m */,
 				A01EB5C517BE32CF006DEF59 /* WTMWebAnuncioViewController.xib */,
@@ -513,6 +516,7 @@
 				A01EB61017BE5265006DEF59 /* WtdM-C-B-Logo-08.jpg in Resources */,
 				A01EB61117BE5265006DEF59 /* WtdM-C-B-Logo-09.jpg in Resources */,
 				A01EB61217BE5265006DEF59 /* WtdM-C-B-Logo-10.jpg in Resources */,
+				A0F6715017F0B96B0013817F /* WTMAnuncioViewController~ipad.xib in Resources */,
 				A01EB61317BE5265006DEF59 /* WtdM-C-C-Logo-01.jpg in Resources */,
 				A01EB61417BE5265006DEF59 /* WtdM-C-C-Logo-02.jpg in Resources */,
 				A01EB61517BE5265006DEF59 /* WtdM-C-I-Logo-01.jpg in Resources */,
@@ -642,7 +646,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WtdMalta0/WtdMalta0-Prefix.pch";
 				INFOPLIST_FILE = "WtdMalta0/WtdMalta0-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -653,7 +659,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "WtdMalta0/WtdMalta0-Prefix.pch";
 				INFOPLIST_FILE = "WtdMalta0/WtdMalta0-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

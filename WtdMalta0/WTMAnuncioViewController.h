@@ -17,7 +17,7 @@
 
 // @property (weak, nonatomic) IBOutlet UIImageView *logoView;
 @property (weak, nonatomic) IBOutlet UIImageView *fotoView;
-@property (weak, nonatomic) IBOutlet UILabel *notasLabel;
+@property (weak, nonatomic) IBOutlet UITextView *notasLabel;
 
 -(id) initWithModelo: (WTMModeloAnuncio *) aModelo;
 
